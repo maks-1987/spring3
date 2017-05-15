@@ -1,8 +1,6 @@
 package com.pluralsight.controller;
 
-/**
- * Created by Max on 13.05.2017.
- */
+
 import com.pluralsight.model.Exercise;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MinutesController {
 
     @RequestMapping(value = "/addMinutes")
-    public String addMinutes(@ModelAttribute ("excercise")Exercise exercise) {
+    public String addMinutes(@ModelAttribute ("exercise")Exercise exercise) {
 
         System.out.println("exercise: " + exercise.getMinutes());
 
