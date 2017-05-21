@@ -31,15 +31,13 @@ public class GoalController {
     public String updateGoal(@Valid @ModelAttribute("goal") Goal goal, BindingResult result) {
 
         System.out.println("result has errors: " + result.hasErrors());
-
         System.out.println("Minutes update: " + goal.getMinutes());
 
         if(result.hasErrors()) {
-
             return "addGoal";
         }
 
-        return "redirect.addMinutes.html";
+        return "redirect:addMinutes.html";
     }
 
 
